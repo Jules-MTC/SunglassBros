@@ -1,0 +1,292 @@
+h1 {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 50px;
+  color: #e3a988;
+  margin-bottom: 30px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.white {
+  color: #fff;
+}
+
+body {
+  background-color: #202020;
+}
+
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(24, 20, 20, 0.987);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+  border-radius: 10px;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
+  top: -20px;
+  left: 0;
+  color: #bdb8b8;
+  font-size: 12px;
+}
+
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 13px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 20px;
+  letter-spacing: 3px;
+  background: transparent
+}
+
+.login-box #send:hover {
+  background: #03f40f;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03f40f,
+    0 0 25px #03f40f,
+    0 0 50px #03f40f,
+    0 0 100px #03f40f;
+}
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+.login-box span#send-anim {
+  bottom: 2px;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03f40f);
+  animation: btn-anim1 2s linear infinite;
+}
+
+.login-box form #reset {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 13px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 15px;
+  letter-spacing: 3px;
+  background: transparent
+}
+
+.login-box a#reset:hover {
+  background: #ff0000;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #ff0000,
+    0 0 25px #ff0000,
+    0 0 50px #ff0000,
+    0 0 100px #ff0000;
+}
+
+.login-box a#reset span {
+  position: absolute;
+  display: block;
+}
+
+@keyframes btn-anim2 {
+  0% {
+    left: -100%;
+  }
+
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+.login-box span#reset-anim {
+  bottom: 2px;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ff0000);
+  animation: btn-anim2 2s linear infinite;
+}
+
+.login-box .user-box #auth_error {
+  color: red;
+
+}
+
+.login-box .user-box #mdp_error {
+  color: red;
+
+}
+
+.login-box .user-box #conf_mdp_error {
+  color: red;
+
+}
+
+.login-box .button-mdp-forget {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 10px;
+  letter-spacing: 3px;
+  background: transparent
+}
+
+.login-box .button-mdp-forget:hover {
+  background: #ff9100;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #ff9100,
+    0 0 25px #ff9100,
+    0 0 50px #ff9100,
+    0 0 100px #ff9100;
+}
+
+.login-box .button-mdp-forget span {
+  position: absolute;
+  display: block;
+}
+
+.spinner {
+  margin-top: 50px;
+  margin-left: 85;
+  box-shadow: 0 0 0 7px #03f40f, inset 0 0 0 1px #03f40f;
+  position: relative;
+  height: 50px;
+  width: 230px;
+  border-radius: 8px;
+  overflow: hidden;
+  animation: rotate_5132 3s linear infinite;
+}
+
+.spinner:before {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: #03f40f;
+  animation: load_5123 3s linear infinite;
+}
+
+@keyframes rotate_5132 {
+
+  0%,
+  42% {
+    transform: rotate(0deg);
+  }
+
+  48%,
+  92% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes load_5123 {
+  0% {
+    width: 0;
+  }
+
+  40%,
+  50% {
+    width: 100%;
+  }
+
+  90%,
+  100% {
+    width: 0;
+  }
+}
+
+
+.load-text {
+  color: #03f40f;
+  margin-top: 50px;
+  /* ajuster la marge supérieure selon votre besoin */
+  width: 400px;
+  position: absolute;
+  font-size: 25px;
+}
+
+.load_box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 300px;
+  width: 400px;
+  padding: 0px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: rgba(24, 20, 20, 0.987);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+  border-radius: 10px;
+}
