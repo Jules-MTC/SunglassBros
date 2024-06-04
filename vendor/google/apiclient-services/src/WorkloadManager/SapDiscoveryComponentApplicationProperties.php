@@ -26,7 +26,15 @@ class SapDiscoveryComponentApplicationProperties extends \Google\Model
   /**
    * @var string
    */
+  public $appInstanceNumber;
+  /**
+   * @var string
+   */
   public $applicationType;
+  /**
+   * @var string
+   */
+  public $ascsInstanceNumber;
   /**
    * @var string
    */
@@ -34,7 +42,7 @@ class SapDiscoveryComponentApplicationProperties extends \Google\Model
   /**
    * @var string
    */
-  public $instanceNumber;
+  public $ersInstanceNumber;
   /**
    * @var string
    */
@@ -61,6 +69,20 @@ class SapDiscoveryComponentApplicationProperties extends \Google\Model
   /**
    * @param string
    */
+  public function setAppInstanceNumber($appInstanceNumber)
+  {
+    $this->appInstanceNumber = $appInstanceNumber;
+  }
+  /**
+   * @return string
+   */
+  public function getAppInstanceNumber()
+  {
+    return $this->appInstanceNumber;
+  }
+  /**
+   * @param string
+   */
   public function setApplicationType($applicationType)
   {
     $this->applicationType = $applicationType;
@@ -71,6 +93,20 @@ class SapDiscoveryComponentApplicationProperties extends \Google\Model
   public function getApplicationType()
   {
     return $this->applicationType;
+  }
+  /**
+   * @param string
+   */
+  public function setAscsInstanceNumber($ascsInstanceNumber)
+  {
+    $this->ascsInstanceNumber = $ascsInstanceNumber;
+  }
+  /**
+   * @return string
+   */
+  public function getAscsInstanceNumber()
+  {
+    return $this->ascsInstanceNumber;
   }
   /**
    * @param string
@@ -89,16 +125,16 @@ class SapDiscoveryComponentApplicationProperties extends \Google\Model
   /**
    * @param string
    */
-  public function setInstanceNumber($instanceNumber)
+  public function setErsInstanceNumber($ersInstanceNumber)
   {
-    $this->instanceNumber = $instanceNumber;
+    $this->ersInstanceNumber = $ersInstanceNumber;
   }
   /**
    * @return string
    */
-  public function getInstanceNumber()
+  public function getErsInstanceNumber()
   {
-    return $this->instanceNumber;
+    return $this->ersInstanceNumber;
   }
   /**
    * @param string
